@@ -1,0 +1,46 @@
+img {
+	max-width: 100%;
+	height: auto;
+}
+.top-banner {
+	width: 100%;
+	max-width; 100%;
+    	height: auto;
+}
+.no-pad {
+	padding: 0px;
+}
+.footer {
+	padding: 10px 0px 0px 0px;
+	margin-top: 20px;
+}
+body, html {
+	overflow-x: hidden !important;
+}
+#menu-footer {
+	padding: 0px;
+    	display: block;
+	list-style-type: none;
+	margin-bottom: 15px;
+}
+#menu-footer, .copyright {
+	font-size: 12px;
+}
+#menu-footer li {
+	display: inline-block;
+	margin: 0px 6px;
+}
+.widget ul {
+	padding: 0px;
+}
+.widget li {
+	list-style-type: none;
+	padding: 6px 0px;
+}
+.widgettitle {
+	margin-bottom: 15px;
+}
+.spacer {
+	position: relative;
+	width: 100%;
+}
