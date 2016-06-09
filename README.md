@@ -1,4 +1,4 @@
-# Faculty of Environment WordPress Bootstrap Theme
+# Faculty of Environment WordPress Bootstrap Theme (WIP)
 
 This is a complete re-working of the standard Bootstrap theme for Faculty of Environment research sites developed in WordPress.
 
@@ -32,3 +32,4 @@ Most standard settings for any new website (favicon, logo, colours, fonts etc) a
 - [ ] Multiple page layouts in options (left menu, right menu etc).
 - [ ] Better Featured image control through options.
 - [ ] Bootstrap optimisations.
+- [ ] Make better page layouts in general (very standard right now).
