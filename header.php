@@ -12,6 +12,7 @@
 	<?php if ( (is_page()) && (!is_front_page()) || (is_single()) && (!is_front_page()) ) : if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<meta name="description" content="<?php echo get_the_excerpt(); ?>" />
 	<meta property="og:description" content="<?php echo get_the_excerpt(); ?>" />
+	<meta property="og:image" content="<?php if ( has_post_thumbnail() ) { the_post_thumbnail_url(); } ?>" />
 	<?php endwhile; endif; endif; ?>
 	<?php if( is_front_page() ) { ?>
     	<meta name="description" content="<?php echo $foe_options[site_desc]; ?>" />
@@ -26,12 +27,13 @@
 	<meta name="twitter:card" content="summary" />
 	<?php if ( (is_page()) && (!is_front_page()) || (is_single()) && (!is_front_page()) ) : if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<meta name="twitter:description" content="<?php echo get_the_excerpt(); ?>" />
+	<meta name="twitter:image" content="<?php if ( has_post_thumbnail() ) { the_post_thumbnail_url(); } ?>" />
 	<?php endwhile; endif; endif; ?>
 	<?php if( is_front_page() ) { ?>
     	<meta name="twitter:description" content="<?php echo $foe_options[site_desc]; ?>" />
 	<?php } ?>
 	<meta name="twitter:title" content="<?php if (!is_front_page()) { echo the_title() . ' | '; } ?><?php bloginfo('name'); ?>" />
-	
+
 	<!-- Favicon -->
     	<link rel="shortcut icon" href="<?php
 	if($foe_options['foe_favicon']['url'] == '') {
@@ -42,15 +44,15 @@
 
 	<!-- Styles -->
         <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
-		
+
 	<!-- Scripts -->
 
 	<?php wp_enqueue_script("jquery"); ?>
         <?php wp_head(); ?>
-			
+
 	<!-- Fonts -->
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
-	
+
 	<!-- Theme Options Styles -->
 	<style>
 	a { color: <?php echo $foe_options['foe_links'][regular]; ?>; }
