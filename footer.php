@@ -25,7 +25,7 @@
 	<?php if ( $foe_options['footer_menu'] == 'yes' ) { ?>
 		<div class="row">
 			<div class="container text-center">
-				<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'menu-footer' ) ); ?>
 			</div>
 		</div>
 	<?php } ?>
