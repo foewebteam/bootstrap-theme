@@ -347,4 +347,27 @@
 			'mode'       => 'css'
 		)
 	);
+
+  // Custom CSS Section
+	Redux::setSection(
+    	'foe_options',
+		array(
+        	'id'    => 'js_section',
+        	'title' => 'Custom JS',
+			    'desc'  => 'Custom JS for the project. Will appear in the footer.',
+        	'icon'  => 'el el-usd',
+    	)
+    );
+
+	Redux::setField(
+		'foe_options', // This is your opt_name,
+		array( // This is your arguments array
+			'id'         => 'custom_js', // Unique identifier for your panel. Must be set and must not contain spaces or special characters
+			'type'       => 'ace_editor',
+			'section_id' => 'js_section',
+			'title'      => 'JS',
+			'subtitle'   => 'Syntax-highlighted Javascript goes in here.',
+			'mode'       => 'javascript'
+		)
+	);
 ?>

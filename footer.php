@@ -40,6 +40,9 @@
 		echo '</div>';
 	} ?>
     	<?php wp_footer(); ?>
+	<?php if( $foe_options['custom_js'] != '') {
+		echo '<script>' . $foe_options['custom_js'] . '</script>';
+	} ?>
 	<?php if( $foe_options['preloader'] == 'yes' ) { ?>
 	<script type="text/javascript">
     	//<![CDATA[
